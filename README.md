@@ -2,7 +2,7 @@
 
 ## Customer Churn Prediction
 
-### 📌 Project Overview
+### 📌 Project Overview.
 
 This project implements a supervised machine learning model to predict
 whether a telecom customer is likely to churn.
