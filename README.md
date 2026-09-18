@@ -1,53 +1,65 @@
 # Predictive Modeling Using Machine Learning
+
 ## Customer Churn Prediction
 
 ### 📌 Project Overview
 
-This project focuses on predicting customer churn using supervised
-machine learning techniques.
+This project implements a supervised machine learning model to predict
+whether a telecom customer is likely to churn.
 
-The objective is to predict whether a telecom customer is likely to
-leave the company based on demographic, service, contract, and billing
-information.
+The model uses customer demographic, service, contract, and billing
+information to make predictions.
 
-### 🎯 Objective
+The project demonstrates the complete machine learning workflow,
+including data preprocessing, model training, prediction, and
+performance evaluation.
+
+---
+
+## 🎯 Objective
 
 The main objectives of this project are:
 
 - Analyze customer churn data
 - Clean and preprocess the dataset
-- Convert categorical variables into numerical features
-- Build a machine learning classification model
+- Handle missing values
+- Convert categorical data into numerical features
+- Train a machine learning classification model
 - Predict customer churn
 - Evaluate model performance
-- Visualize the results using a confusion matrix and ROC curve
+- Visualize predictions using a confusion matrix and ROC curve
 
-### 📊 Dataset
+---
 
-The dataset contains telecom customer information including:
+## 📊 Dataset
 
-- Customer demographics
-- Tenure
-- Phone and internet services
-- Online security and support
+The project uses the Telco Customer Churn dataset.
+
+The dataset contains:
+
+- 7,043 customer records
+- 21 columns
+- Customer demographic information
+- Services used by customers
 - Contract information
-- Payment method
-- Monthly charges
-- Total charges
-- Churn status
+- Payment information
+- Monthly and total charges
+- Customer churn status
 
-The dataset contains 7,043 customer records and 21 columns.
+### Target Variable
 
-### 🤖 Machine Learning Algorithm
+The target variable is:
 
-The project uses:
+`Churn`
 
-**Random Forest Classifier**
+Where:
 
-Random Forest is an ensemble machine learning algorithm that combines
-multiple decision trees to make predictions.
+- `Yes` → Customer churned
+- `No` → Customer stayed
 
-### 🔧 Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -59,7 +71,20 @@ multiple decision trees to make predictions.
 - Jupyter Notebook
 - GitHub
 
-### 🔄 Project Workflow
+---
+
+## 🤖 Machine Learning Algorithm
+
+### Random Forest Classifier
+
+A Random Forest Classifier was used to predict customer churn.
+
+Random Forest is an ensemble learning algorithm that combines
+multiple decision trees to produce a classification result.
+
+---
+
+## 🔄 Project Workflow
 
 ```text
 Dataset
@@ -70,11 +95,13 @@ Data Cleaning
    ↓
 Missing Value Handling
    ↓
-Categorical Encoding
+Categorical Data Encoding
+   ↓
+Feature and Target Separation
    ↓
 Train-Test Split
    ↓
-Random Forest Model
+Random Forest Classifier
    ↓
 Predictions
    ↓
@@ -82,4 +109,4 @@ Model Evaluation
    ↓
 Confusion Matrix
    ↓
-ROC Curve & AUC
+ROC Curve and AUC
